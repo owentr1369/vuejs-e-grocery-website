@@ -63,19 +63,24 @@
               </v-btn>
             </v-btn-toggle>
           </v-toolbar>
-        </v-col></v-row
-      >
+          <CategoryComp /> </v-col
+      ></v-row>
     </v-container>
   </v-app>
 </template>
 
 <script>
 import NavBar from "../components/NavBar.vue";
+import CategoryComp from "../components/CategoryComp.vue";
 export default {
   name: "HomeView",
   components: {
     NavBar,
+    CategoryComp,
   },
+  data: () => ({
+    toggle_exclusive: 1,
+  }),
 };
 </script>
 
